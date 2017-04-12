@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    width: 175px;
+}
+header{
+  font-family: 'VT323', monospace;
+  padding-bottom: 8px;
+  text-align: center;
+  margin-left: auto;
+}
+
+nav{
+  word-wrap: break-word;
+  height:100% ;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+.mainTitle {
+  font-size: 3.5rem;
+}
+
+html{
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 246, 246, 0.52);
+    z-index: 0;
+    margin: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+
+aside {
+  padding: 25px;
+}
+
+main {
+  padding: 2%;
+}
+
+main, aside {
+  padding-top: 1%;
+}
+
+section {
+  margin: 0 0;
+}
+
+footer {
+  clear: both;
+  padding: 1%;
+}
+
+aside ul li {
+  margin: 1.5% 0;
+  line-height: 1.5;
+}
+
+section{
+  padding-left: 10px;
+}
+
+.profile-picture {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  background-color: #466C88;
+  border-radius: 50%;
+}
+
+#profileSection
+{
+  text-align: center;
+  margin: 10px auto 20px auto;
+}
+
+#mainContent img {
+ max-height:400px;
+ width: auto;
+ height: auto;
+}
+.centerBlock {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.subtitle{
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: -2px;
+}
+
+a {
+  color: #ff81de;
+  background: #000;
+  text-decoration: none; /* no underline */
+}
+
+ul li a:hover{
+   color: #fff;
+   background: #000;
+}
+
+ul li a:active{
+  color: #ff0;
+  background: #000;
+}
+
+h1,h2 {
+  margin: 0;
+}
+
+#leftMenu{
+  float: left;
+  height: 100%;
+  width: 175px;
+  background-color: rgba(0, 0, 2, 0.17);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 5;
+}
+
+#container{
+  height: 100%;
+  margin-left: 175px;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: #673AB7;
+  padding: 5px 0 0;
+  height: 30px;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  background-color: #673AB7;
+}
+@media  all and (max-width:700px) {
+  main, aside, #leftMenu, #container {
+    width: 100%;
+  }
+  ul{
+    width: 100%;
+  }
+  section {
+    padding-right: 20px;
+    padding-left: 20px
+  }
+  #container{
+    margin: 0;
+    padding-left: 0;
+  }
+  #leftMenu{
+    position: initial;
+  }
+  aside div img{
+    display: block;
+  }
+  nav{
+    align-content: center;
+    text-align: center;
+    margin: 10px auto 20px auto;
+  }
+}
